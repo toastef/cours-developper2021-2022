@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template.css">
+    <title>Les tableaux</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Les tableaux de base[table, tr,th,td]</legend>
+        <table border="1"> <!-- border est devenu obselet, maintenant on le fait en css -->
+            <tr><!-- tr pour les différentes lignes du tableaux-->
+                
+                <th>Nom</th>  <!-- th pour l'entête -->
+                <th>Prénom</th>
+                <th>Fonction</th>
+                <th>Localité</th>
+            </tr>
+            <tr>
+                <td>Doe</td> <!-- td pour les différentes cases-->
+                <td>John</td>
+                <td>Directeur</td>
+                <td>Namur</td>
+            </tr>
+            <tr>
+                <td>Servais</td>
+                <td>Dominique</td>
+                <td>Enseignant</td>
+                <td>Liège</td>
+            </tr>
+            <tr>
+                <td>Doe</td>
+                <td>Jane</td>
+                <td>Sous-directice</td>
+                <td>Namur</td>
+            </tr>
+        </table>
+
+    </fieldset>
+    <fieldset>
+        <legend>Tableau structurés [thead,tbody,tfoot]</legend>
+        <table> <!-- tableau-->
+            <thead> <!-- entête du tableau -->
+                <tr>
+                <th>Nom</th>  <!-- th pour l'entête -->
+                <th>Prénom</th>
+                <th>Fonction</th>
+                <th>Localité</th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- corp du tableau-->
+                <tr> <!-- ligne du tableau-->
+                    <td>Doe</td> <!-- td pour les différentes cases-->
+                    <td>John</td>
+                    <td>Directeur</td>
+                    <td>Namur</td>
+                </tr>
+                <tr>
+                    <td>Servais</td>
+                    <td>Dominique</td>
+                    <td>Enseignant</td>
+                    <td>Liège</td>
+                </tr>
+                <tr>
+                    <td>Doe</td>
+                    <td>Jane</td>
+                    <td>Sous-directice</td>
+                    <td>Namur</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <!-- Les céllules du tableau devraient être fusionnées -->
+                    <td></td>
+                    <TD></TD>
+                    <td>3 membres</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </fieldset>
+    <fieldset>
+        <legend>Les fusions de lignes et de colonnes</legend>
+        <table border="1"> 
+            <thead>
+                <tr>
+                    <th colspan="4">IEPSCF - NAMUR</th> <!-- colspan va permettre de fusionner les colonnes et de centrer le texte -->
+                </tr>
+                <tr>
+                <th>Nom</th> 
+                <th>Prénom</th>
+                <th>Fonction</th>
+                <th>Localité</th>
+                </tr>
+            </thead>
+
+            <tbody> 
+                <tr> 
+                    <td>Doe</td> 
+                    <td>John</td>
+                    <td>Directeur</td>
+                    <td>Namur</td>
+                </tr>
+                <tr>
+                    <td>Servais</td>
+                    <td>Dominique</td>
+                    <td>Enseignant</td>
+                    <td>Liège</td>
+                </tr>
+                <tr>
+                    <td>Doe</td>
+                    <td>Jane</td>
+                    <td>Sous-directice</td>
+                    <td>Namur</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td> <!-- va faire fusionner 3 cellules-->
+                    <td> 3 membres</td>
+                </tr>
+            </tfoot>
+        </table>
+<p>
+        <table border="1"> 
+            <thead>
+                <tr>
+                    <th colspan="4">IEPSCF - NAMUR</th> <!-- colspan va permettre de fusionner les colonnes et de centrer le texte -->
+                </tr>
+                <tr>
+                <th>Nom</th> 
+                <th>Prénom</th>
+                <th>Fonction</th>
+                <th>Localité</th>
+                </tr>
+            </thead>
+
+            <tbody> 
+                <tr> 
+                    <td rowspan="2">Doe</td> <!-- va permettre de combiner, fusionner verticalement les 2 premières ligne du tableau-->
+                    <td>John</td>
+                    <td>Directeur</td>
+                    <td>Namur</td>
+                </tr>
+               
+                <tr>
+                    <td>Jane</td>
+                    <td>Sous-directice</td>
+                    <td>Namur</td>
+                </tr>
+                <tr>
+                    <td>Servais</td>
+                    <td>Dominique</td>
+                    <td>Enseignant</td>
+                    <td>Liège</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td> <!-- va faire fusionner 3 cellules-->
+                    <td> 3 membres</td>
+                </tr>
+            </tfoot>
+        </table>
+    </p>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Exercice</legend>
+        <table border="1"> 
+            <thead>
+                <tr>
+                    <th colspan="5">IEPSCF - NAMUR</th> <!-- colspan va permettre de fusionner les colonnes et de centrer le texte -->
+                </tr>
+                <tr>
+                <th>Titre</th>
+                <th>Nom</th> 
+                <th>Prénom</th>
+                <th>Fonction</th>
+                <th>Localité</th>
+                </tr>
+            </thead>
+
+            <tbody> 
+                <tr> 
+                    <td rowspan ="3">Définitif</td>
+                    <td rowspan="2">Doe</td> <!-- va permettre de combiner, fusionner verticalement les 2 premières ligne du tableau-->
+                    <td>John</td>
+                    <td>Directeur</td>
+                    <td>Namur</td>
+                </tr>
+               
+                <tr>
+                    <td>Jane</td>
+                    <td>Sous-directice</td>
+                    <td>Namur</td>
+                </tr>
+                <tr>
+                    <td>Servais</td>
+                    <td>Dominique</td>
+                    <td>Enseignant</td>
+                    <td>Liège</td>
+                </tr>
+                <tr>
+                    <td rowspan ="2">Temporaire</td>
+                    <td>Lambert</td>
+                    <td>Aline</td>
+                    <td>Informaticienne</td>
+                    <td>Bruxelles</td>
+                </tr>
+                <tr>
+                    <td>Wagner</td>
+                    <td>Henriette</td>
+                    <td>Comptable</td>
+                    <td>Charleroi</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+        
+    </fieldset>
+</body>
+</html>

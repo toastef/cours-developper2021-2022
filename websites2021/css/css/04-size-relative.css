@@ -1,0 +1,19 @@
+/* Created 2021-14-12*/
+/* 1em = 16px */
+/* la taille de départ va définir le reste des tailles, l'utilisation du em va permettre aux différents éléments de s'adapter à la taille du premier element body qui est l'unité parent*/
+body {
+    font-size: 80%; /* 80% de 16px*/ /* le 100% va représenter 16px*/
+}
+
+ h1 {
+    font-size: 2em;
+ }
+
+ h2 {
+    font-size: 1.6em;
+ }
+
+ p {
+    font-size: 0.9em;
+ }
+

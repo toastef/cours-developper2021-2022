@@ -1,0 +1,14 @@
+/* Commentaire en css*/
+/* Css externes ( external css)*/
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: darkolivegreen;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}

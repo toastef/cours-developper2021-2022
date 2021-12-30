@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Basique</title>
+</head>
+<body>
+    <h1> Balise de base</h1>
+    <h2>Syntaxe </h2>
+    <!--Paragraphes-->
+    <!--p*2lorem50 -->
+    <p>Lorem, ipsum dolor sit amet consectetur <br>adipisicing elit. Consequuntur, suscipit id? Ullam optio excepturi quidem iusto libero veniam! Temporibus incidunt corporis omnis, dolorum nobis sint, dolores voluptate quo deleniti esse, nam debitis dignissimos vero voluptatem repellat recusandae et ducimus eveniet ratione distinctio assumenda! Eligendi quisquam suscipit minus ipsam magnam voluptates!</p>
+    <p>Tempore quos dolorum nam, ab laudantium voluptates nesciunt molestiae iure quidem iste numquam nihil beatae repellat, accusantium ipsa rem necessitatibus soluta. Nostrum ut tempore, minima quis, explicabo eligendi nihil doloribus repellat quae laudantium inventore blanditiis hic necessitatibus quibusdam excepturi ipsa, soluta aperiam fugit ullam! Laborum molestias numquam dolores consequatur quisquam.</p>
+    
+<!-- la balise <pre> texte </pre> nous permet de faire apparaitre les memes espace, sauts de lignes  que dans le code elle va préformater le texte-->
+<pre> h1 {
+    color :       red ; 
+}
+</pre>
+<!-- links-->
+<!-- Liens interne ou externes (path/file)
+    Attribut = taget et title
+-->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloribus <a href="https://www.google.be"target="_blank" title="ouverture du moteur de recherche de google">google</a> quibusdam voluptatibus repudiandae placeat ipsum atque accusantium minima possimus, animi, eos qui harum nam laborum <a href="03-la-syntaxe.html"> la syntaxe HTML</a> quam cupiditate sit consequatur commodi iure. Magnam placeat optio fugiat ex sequi <a href="01-balises-requises.html"target="_blank"> Les balises requises</a> inventore! Dolor, commodi. Quia blanditiis nemo culpa laboriosam error temporibus officiis!</p>
+
+<!-- Création d'une balise de référence qui s'ouvrira dans un autre onglet <a href="01-balises-requises.html"target="_blank"> Les balises requises</a> c'est le target="_blank" qui est utilisé-->
+<!-- l'attribut title va créer une info bulle quand on va se mettre sur le mot-->
+
+<!--Images-->
+<!-- Attribut : src = source(fichier) alt = description(texte alternatif - accessibilitée)-->
+<!-- Attribut width = largeur et height = hauteur // width peut être utilisé tout seul il va respecter les proportion tout seul-->
+<img src="img/rocher.jpg" alt="Photo représentant un paysage de rocher">
+<img src="img/rocher1" alt="rocher" title="rocher" width="400" height="400">  <!-- le widht permet d'être utilisé toute seul il ajuste la taille de l'image-->
+<a href="03-la-syntaxe.html">
+    <img src="img/rocher.jpg" alt="rocher" title= "revoir le cours syntaxe" 
+    ></a>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* CSS Library */
+
+body {
+    margin: 2% 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(145, 139, 139)
+}
+
+i {
+    color: rgb(255, 115, 0);
+}

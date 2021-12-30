@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<style>
+		body {
+		margin: 2% 15%;
+		font-family: sans-serif;
+		color: #333;
+		}
+
+		fieldset {
+			margin-bottom: 20px;
+			border-radius: 8px;
+			border: 1px solid rgb(200, 200, 200);
+		}
+
+		legend {
+			padding: 0 7px;
+			font-size: 20px;
+			color: #555;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+        <b>Librarie Lamartine &nbsp;&nbsp; </b> 
+        <a href="index.html"> Accueil</a> |
+        <a href="portrait.html">Portrait</a> | 
+        <a href="lexique.html"> Notre lexique</a> | 
+        <a href="#"> Contact</a>
+    </nav>
+    <hr>  
+	<br>  
+
+	<fieldset>
+		<legend>Nous contacter</legend>
+			<!-- Genre -->
+			<form action="" method="post">
+				<label for="genre">Genre</label>
+           		<input type="radio" id="M" name="gender" value="Monsieur">
+            	<label for="monsieur">Monsieur</label>
+            	<input type="radio" id="MME" name="gender" value="Madame">
+            	<label for="mme">Madame</label>
+            	<input type="radio" id="mlle" name="gender" value="Mademoiselle">
+            	<label for="m">Mademoiselle</label>
+
+			<br>
+			<!-- Nom -->
+				<label for="name"> Votre nom &nbsp;</label>
+            	<input type="text" id="name" name="name" required placeholder=" Votre nom et prénom">
+			
+			<br>
+			<!-- Email -->
+				<label for="email">Votre Email</label>
+				<input type="email" id="email" name="email">
+			
+			<br>
+			<!-- Choix Livres -->
+				<label for="livre">Votre livre &nbsp; </label>
+				<select name="livre" id="livre">
+					<option value=""> Choisissez</option>
+						<optgroup label = "Romans"> 
+							<option value="">Les Misérables</option>
+							<option value="">L'Étranger</option>
+							<option value="">Le Rouge et Noir</option>
+							<option value="">Cent Ans de solitude</option>
+							<option value="">Le Compte de Monte-Cristo</option>
+						</optgroup>
+						<optgroup label="Sciences humaines">
+							<option value="">Un long chemin</option>
+							<option value="">L'affolement du monde</option>
+							<option value="">La liste</option>
+						</optgroup>
+				</select>
+
+			<br>
+			<!-- Qauntitées livres -->
+				<label for="livres">Nombre &nbsp;&nbsp;&nbsp;&nbsp; </label>
+        		<input type="number" min="1" max="10" name="livres" id="livres" value="1">
+
+			<br>
+			<!-- Satisfaction -->
+				<label for="skill">Votre satisfaction</label>
+            	<input type="range" name="sat" id="sat" min="0" max="10" oninput="document.getElementById('level').textContent=value">
+            	<span id="level">5</span>
+
+			<br>
+			<!-- Commentaire -->
+				<label for="commentaire">Votre commentaire</label>
+			<br>
+       			 <textarea name="com" id="com" cols="30" rows="10" required placeholder="Commentaire ici..."></textarea>
+
+        	<br>
+			<!-- Bouton acheter -->
+       			 <input type="submit" value="Acheter">
+		</form>
+	</fieldset>
+</body>
+</html>

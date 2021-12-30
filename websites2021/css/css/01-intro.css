@@ -1,0 +1,18 @@
+/* Commentaire css */
+/* Css externes ( external )*/
+/*selecteur { puis style à appliquer : attribut du style }*/
+h1 {
+	color: #7f0000;
+}
+
+h2 {
+	color: #003c8f;
+}
+
+h4 {
+	color: #ff6f00;
+}
+
+p {
+	font-family:Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template.css">
+    <title>Média</title>
+</head>
+<body>
+    <h2> Un ensemble d'image </h2>
+    <figure> <!-- La balise figure permet de regrouper plusieurs images ayant un rapport de sens-->
+        <!--  La balise figcaption permet d'ajouter une seul légende -->
+        <img src="img/rocher.jpg" alt="">&nbsp;
+        <img src="img/rocher1.jpg"  alt="" width="400" height="400">&nbsp;
+        <figcaption>
+            Rocher 
+        </figcaption>
+    </figure>
+    <h2>Vidéos</h2>
+    <fieldset>
+        <legend>Vidéo fichier unique</legend>
+    <p> <!-- il faut absolument ajouter l'attribut controls pour pouvoir afficher la vidéo sur le browser-->
+
+        <video src="media/bunny.mp4" controls ></video>
+    </p>
+
+        <audio  src="media/dr.dre.flac" controls></audio>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Vidéo fichier unique avec option </legend>
+    <p>
+        <video src="media/bunny.mp4" controls autoplay muted loop preload></video>
+    </p> <!-- autoplay muted va permettre le lancement automatique de la vidéo mais en muted car plus possible en normal . Le loop va faire une lecture en boucle , le preload permet de charger d'abord la vidéo ensuite le contenu du site-->
+    </fieldset>
+
+    <fieldset>
+        <legend>Vidéo image cache </legend>
+    <p>
+        <video src="media/bunny.mp4" controls poster="media/bunny.jpg" width="500"></video>
+    </p> 
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Vidéo multiples </legend>
+    <p>
+        <video  controls width="500" poster="media/bunny.jpg" >
+            <source src="media/bunny.mp4">
+            <source src="media/bunny2.webm">
+            <p>Format de vidéos non reconnu</p>
+        </video>
+    </p> 
+    </fieldset>
+
+    <h2>Audio</h2>
+    <fieldset>
+        <legend>Audio fichier unique</legend>
+        <p>DR DRE</p>
+        <audio  src="media/dr.dre.flac" controls ></audio>
+
+    </fieldset>
+    <fieldset>
+        <legend>Audio formats Multiples </legend>
+        <p>DR DRE</p>
+        <audio controls >
+            <source src="media/dr.dre.flac">
+            <source src="media/dr.dre.mp3">
+            
+        </audio>
+
+
+    </fieldset>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+/* Created 2021-14-12 */
+
+body {
+    font-size: 100%;
+}
+/* les unitées absolues */
+/* Utiliser de préférence les unitées relatives sauf si contraintes graphiques */
+
+.pt {
+    font-size: 12pt;  /* le point 12pt= 16px*/
+}
+
+.pc {
+    font-size: 1pc; /* 1pc = 16 px */
+}
+
+.mm {
+    font-size: 4,3mm;
+}
+
+.px {
+    font-size: 16px; /* unité de mesure par défaut relatif à l'appareil de visualisation tv, résolution écran,... */
+}
+
+
+/* Unitées relative */
+
+/* Utiliser le plus souvent pour les espacements ( templating)*/
+.percent {
+    font-size: 100%;
+}
+ 
+/* 1em= 16px */
+/* Il fait toujour référence à l'element parent*/
+.em {
+    font-size: 1em;
+}
+
+/* rem ( root em ) 1rem = 16px*/
+/* il fait toujour référence à l'element racine (root)*/
+.rem {
+    font-size: 1rem;
+}
+
+/* Différence entre em et rem*/
+/* li {
+    font-size: 2em, le em va doubler la taille des éléments enfants de li 
+} */
+
+li {
+    font-size: 2rem; /* en mettant rem il se base sur la taille par défaut fixée dans le body */ 
+}
+
+div {
+    font-size: 2em; 
+}
+
+div p {
+    font-size: 1rem; /* il va se basé sur la ref du body et non de la div */
+}

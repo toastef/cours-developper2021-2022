@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template.css"> <!-- appel du css pour que la page ce mette en forme -->
+    <title>Balises de formatage </title>
+</head>
+<body>
+   <fieldset> <!-- correspond a une sorte de boite dans lequel va ce mettre le texte-->
+       <legend> Formatage sémantique</legend> <!-- titre du fieldset-->
+        <!--
+            Utilisation des balises de lignes sémantiques 
+             ne plus utiliser les balises non sémantiques : <i> , <b> et <u> -->
+
+       <p>Lorem ipsum dolor <strong>sit amet consectetur</strong> adipisicing elit. Cupiditate, officia illo aperiam fuga quae odio dolores nihil temporibus vel libero quam esse tempora totam perspiciatis laudantium saepe dolorem eius blanditiis eum distinctio ut ullam minus porro tempore! <b>Perferendis</b>, saepe obcaecati commodi eveniet maxime doloribus hic eligendi. Expedita dolores quasi omnis.</p>
+       <p>Minus itaque reiciendis libero sapiente illo eaque, expedita nulla dolores debitis, minima commodi? <em>blanditiis rerum</em> quis, quam sed beatae fugiat , libero dolore error dicta iure. Recusandae corrupti veniam perspiciatis doloremque neque deleniti <u>doloribus</u>, sit pariatur tenetur! Nulla perferendis laborum harum porro doloribus! Laborum odit placeat consequuntur, dignissimos minus aliquid?</p>
+       <p>Quae deleniti dolorum quisquam delectus ab repellat vel. Rerum neque <ins>similique dicta</ins>  sapiente blanditiis perspiciatis, dolorum <span class="underline">dolorem natus aliquam!</span>nulla tenetur vero nisi sit dolores architecto adipisci deleniti cumque  Explicabo animi veniam laboriosam odio, ex doloremque <del>impedit, labore obcaecati</del> consectetur  fuga ipsam accusamus quia voluptatum corporis nemo nobis.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi necessitatibus?<mark> Ut perspiciatis deserunt</mark> autem eum, necessitatibus fugiat natus minima nisi, perferendis maxime ipsa rerum a eaque illum obcaecati delectus temporibus voluptate voluptatem, voluptatum vel laboriosam aut facilis id et! Veritatis debitis quasi totam eos beatae, soluta sapiente natus facilis.</p>
+    <p>Vel, quidem voluptas dolore repellat nulla assumenda soluta, repellendus facilis molestias magnam porro eaque fugiat totam sapiente accusamus adipisci aliquam cumque labore quos debitis. Sapiente doloribus voluptatum deleniti soluta veritatis? Hic nisi, aliquam, laborum repellendus a accusantium dicta officiis perspiciatis dolorem iusto minus labore eos quo ullam rerum vel. Deleniti!</p>
+    <p>Aliquid, M<sup>me</sup>porro illo alias cupiditate atque magni nam obcaecati nulla eius ipsum a corrupti dolor quas, quae cumque voluptatum temporibus? Odio, magnam quibusdam dolores provident H<sub>2</sub>O voluptatem sapiente saepe aspernatur autem dolore atque soluta nemo cupiditate non possimus porro iure aliquid et. Cupiditate hic laboriosam odio voluptate delectus asperiores deleniti omnis.</p>
+    <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae labore quo nesciunt tenetur nam beatae aut consequatur ducimus recusandae? Molestias laborum ex perspiciatis, ducimus, magnam minima soluta suscipit optio, possimus ad voluptatum aut consequatur illum hic at sint? Enim excepturi ea nam voluptatem ex itaque laudantium cum commodi animi officiis?</small></p>
+    <!-- la balise <strong> va permettre de mettre en gras,
+        la balise <em> permet de mettre en italique ,
+        la balise <del> permet de barrer le texte en question,
+        la balise <ins> va permettre de souligner mais il est préférable d'utiliser <span>
+    la balise <span> permet de créer une balise invisible qui nous permmetra d'indiquer en css ce qu'il faut faire avec le texte en question voir le fichier css pour les différents ajustement( effets ) fait ,cad un formatage css -->
+        <!-- la balise <mark> va permetre de jaunir le texte
+        La balise <sup> va permettre de remonter du texte comme dans Mme
+        La balise <sub> va permettre de redescendre un chiffre ou une lettre par rapport au texte comme H2O -->
+
+   </fieldset>
+<!--fieldset>legend{les type de citations et autres} ajout de texte dans balise -->
+   <fieldset>
+       <legend>les types de citations et autre</legend>
+       <!-- balise blokquote permet de créer un paragraphe de citation et l'attribut cite de définir la source (web, livre, catalogue,... )-->
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nam rerum possimus, eum magnam officia explicabo fugiat reiciendis earum. Molestiae, delectus incidunt veniam, reprehenderit fugiat ratione obcaecati ipsum aut voluptatibus assumenda minima aspernatur itaque at beatae similique! Velit, quibusdam rem.</p>
+       <blockquote cite="https://fr.wikipedia.org/wiki/Renaissance">
+           <p lang="en">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ratione ea distinctio ipsum dolorum est voluptates deserunt beatae dicta iusto itaque aperiam molestiae sequi, reiciendis magnam! Saepe illo commodi deleniti fuga architecto excepturi asperiores ullam, aliquam ipsum quidem. Ex, assumenda!</p>
+       </blockquote>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur porro, magni maiores <q cite="Pierre Ronsard">laborum eum dicta necessitatibus</q> repellat sapiente omnis voluptate praesentium earum cum ab, animi blanditiis eaque, delectus molestiae autem fugiat deleniti in. Magni, natus.</p>
+       <!-- la balise <q> va mettre des guillemets sur une partie de la phrase ou sur une citation au sein d'un texte. contrairement à la balise blokquote qui elle reprend un paragraphe entier de citation-->
+       <p>
+           <!--Pour citer une oeuvre ( livre , peinture , film ....) on utilise la balise <cite></cite> à ne pas confondre avec l'attribut site qui se refère seulement a blokkquote et a <q> Nom de l'oeuvre pas les dates ni l'auteurs a l'intérieur de la balise -->
+        <cite>La joconde</cite> de Léonard de Vinci<br>
+        <cite>La madonne</cite> de Raphael
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem enim, minima quisquam omnis laboriosam, deserunt fugiat cumque quos, voluptatibus natus <abbr title="organisation traité atlantique Nord">OTAN</abbr> odio repellat vitae? Reiciendis, alias facilis adipisci voluptatibus non ullam. Eum error quod ipsum, nam amet totam quia quis obcaecati sunt quasi, ut accusantium vero iste ab odit nulla aperiam.</p>
+        <!--La balise <abbr> permet de signifier des abréviations ou des acronymes-->
+        <!--La balise <address> est destinée aux informations de type numériques et non postal-->
+        <address>
+            Jhon Doe<br>
+            E-mail : Jhon.doe@gmail.com<br>
+            website :  https:www.jdoe.com <br>
+            linkedink : ...
+        </address>  
+        <!-- Utilisation de la balise time et attribut datetime pour péréniser une date  -->
+        <p>Lorem ipsum dolor sit amet <time datetime="2021-12-07">07/12/2021</time> consectetur, adipisicing elit. Fugiat ipsa facilis nostrum vitae maiores sunt, a, labore iure <time datetime="2022-01-01">Début d'année</time> aspernatur distinctio nam commodi aliquid eius id possimus omnis repudiandae, inventore aliquam corporis <time datetime="2022-01-01">Updated : 07/12/2021</time> numquam unde reprehenderit odio! Quis consequatur neque cum mollitia.</p>
+   </fieldset>
+<fieldset>
+    <legend>Les entitées HTML</legend><!-- voir le site mdn pour trouver les autres entitées-->
+    <p>Les balises HTML :<br>
+        la balise &lt;strong&gt; permet de mettre &nbsp;&nbsp;&nbsp;&nbsp;en évidence du contenu</p>
+        <p>
+            <!-- Les entités nommées ou numérique commencent par & et se terminent par ; -->
+            <!-- entitée nommées-->
+            &lt;<br> <!-- pour faire apparaitre <   -->
+            &gt;<br> <!-- pour faire apparaitre >   -->
+            &copy;<br> <!-- pour faire apparaitre le signe copyright   -->
+            &trade;<br> <!-- pour faire apparaitre le signe tm   -->
+            &euro;<br> <!-- pour faire apparaitre €   -->
+            &frac12;<br> <!-- pour faire apparaitre une fraction 1/2   -->
+            &hearts;<br> <!-- pour faire apparaitre un coeur   -->
+            &rarr; <!-- pour faire apparaitre une fleche vers la droite ->   -->
+            &nbsp; <!-- espace-->
+            <!-- entitée numérique-->
+            &#9824; <!-- pique-->
+            &#174;<!--marque déposée entitée numérique-->
+            </p>
+</fieldset>
+
+    
+</body>
+</html>

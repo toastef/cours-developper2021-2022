@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template.css">
+    <title>les listes</title>
+</head>
+<body>
+    <fieldset> 
+        <legend>Utilisation d'un signet</legend>
+        <!-- le # dans le href va connecter le mots avec l'id de définition qui se trouve en bas de page   ancre = le a href = "#...." et signet = endroit ou on veut renvoyer le client pour la définition id = nom de l'ancre  -->
+        <p>Lorem <a href="#ipsum">ipsum</a> dolor sit amet <a href="#consectetur "> consectetur </a>adipisicing elit. Ex et sint accusantium recusandae ab veniam pariatur in nulla repellat, id nam explicabo, nihil sunt. Tempore dolore quam sapiente officia cum voluptatibus ducimus exercitationem quaerat. Dignissimos esse incidunt adipisci nulla est.</p>
+    </fieldset>
+    <fieldset>
+        <legend>les listes ordonnées</legend>
+        <ol>
+            <li>ETW </li>
+            <li>IP</li>
+            <li>Réseau</li>
+            <li>Sites statiques</li>
+            <li>CMS</li>
+        </ol>
+        <!-- Numérotation inversée-->
+        <!-- attribut boolean reversed donc pas besoin de mettre de = ""-->
+        <ol reversed>
+            <li>ETW </li>
+            <li>IP</li>
+            <li>Réseau</li>
+            <li>Sites statiques</li>
+            <li>CMS</li>
+        </ol>
+        <!-- Modifier la numérotation c à d, à la place de 12345 mettre ABCD ou numéro Romain en utilisant le I  -->
+        <ol type = "A">
+            <li>ETW </li>
+            <li>IP</li>
+            <li>Réseau</li>
+            <li>Sites statiques</li>
+            <li>CMS</li>
+        </ol>
+        <ol>
+            <li>ETW </li>
+            <li>IP</li>
+            <li>Réseau</li>
+            </ol>
+<p></p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque maiores a autem expedita vero cupiditate, architecto repudiandae officiis veniam mollitia, recusandae at eius maxime, error amet sapiente deserunt nulla est impedit doloribus inventore alias similique? Molestias tempora voluptas soluta!
+<!-- modifier le début de la numérotation avect l'attribut start-->
+            <ol start="4">
+            <li>Sites statiques</li>
+            <li>CMS</li>
+        </ol>
+    </fieldset>
+
+    <fieldset>
+        <legend>Listes non ordonnée (à puces)</legend>
+        <!-- ul>li*5>{Item 0$} -->
+        <ul> 
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+            <li>Item 04</li>
+            <li>Item 05</li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Les listes imbriquées</legend><!-- pour créer une liste imbriquéesans avoir de soucis avec le validuer, pour l'élément en question il ne faut pas fermer la balise li pour décrire la seconde liste-->
+       <ol>
+            <li>css</li> 
+            <li>Php</li> 
+            <li>html
+            <ol type ="A">
+                <li>Html 01</li> 
+                <li> Html 02</li>
+                <li> Html 03</li>
+                <li>Html 04</li>
+                <li>xhtml 01</li>
+                <li>html 05</li>
+           </ol>
+        </li>
+           <li>Javascript</li>
+       </ol>
+
+    </fieldset>
+    <fieldset>
+        <legend>Listes à définitions</legend><!-- va mettre le Mot a définir en évidence puis le texte de définition décalé -->
+        <dl> <!-- definition list-->
+            <dt>Lorem</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic voluptatum assumenda quo molestiae suscipit reiciendis eius laudantium neque labore at, optio voluptate temporibus nulla.</dd>
+            <dt id="ipsum">Ipsum</dt><!-- id de l'ancre du haut de page-->
+            <dd>adipisicing elit. Magnam inventore exercitationem, accusantium eius optio voluptates, modi iure nostrum eaque delectus a neque, animi quo nulla!</dd>
+            <dt id="consectetur">consectetur</dt><!-- id de l'ancre du haute de page-->
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vel totam, architecto aliquam distinctio cum excepturi! Nisi, nulla iste ratione, est consequatur at placeat praesentium dolores inventore quasi, quis perspiciatis cupiditate ut aut nam officia? Nesciunt, unde nobis at quidem corrupti magnam, vel aliquid aspernatur earum expedita distinctio a amet!</dd>
+        </dl>
+    </fieldset>
+</body>
+</html>

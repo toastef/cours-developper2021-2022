@@ -1,0 +1,80 @@
+/* Created 2021-12-14 */ 
+
+/* couleurs nommées */
+
+.name {
+    color: darkorange
+}
+
+/* couleurs RGB ( red,green,blue ) */
+/* valeurs comprises entre 0 et 255 */ 
+
+.rgb {
+    color: rgb(255, 0, 0);
+    color: rgb(0, 255, 0);
+    color: rgb(0, 0, 255);
+    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    color: rgb(180, 150, 0);
+}
+
+/* couleurs en pourcentages */
+
+.rgb-percent {
+    color: rgb(50%, 10%, 50%)
+}
+
+/* couleur en hexadecimal*/
+/* valeurs en base 16 ( de 0 a 9 + de A à F )*/
+/* Toujours rouge, vert, bleu. les couleurs vont toujour par 2 charactères (00 colors rouge , 00 color vert , 00 color bleu) */
+
+.hexa {
+    color: #000000;
+    color: #000;
+    color: #FFF;
+    color: #0000FF; /* 00F */
+    color: #BB8866; /* peut être raccourci car chaque couple de couleurs a une valeur identique donc cela pourait donner #B86 */ 
+    /* si tous les couples ne sont pas identiques on ne peut pas raccourcir la couleur.*/
+}
+
+/* couleurs HSL ( roue chromatique ) */
+/*
+H: hue (teinte) valeur de 0 a 360 
+S: saturation (impacte de la couleur) de 0% a 100% 
+L: lightness ( luminoisité de la couleur) 0% a 100% 
+*/
+
+.hsl{
+    color: hsl(30, 77%, 51%)
+}
+
+.color {
+    color: #666;
+}
+
+/* La transparence */
+
+.background {
+    background-image: url('/css/img/back-transparency.jpg');
+    color: #FFF;
+}
+
+a {
+    padding: 10px; /* espace intérieur*/
+    text-decoration: none; /* suppression du soulignement*/
+    color: #444;
+}
+
+/* transparence RGBA ( ) */
+/* La couche alpha est définie par une valeur comprise entre 0 ou 1 */
+.alpha-rgba {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+
+/* La transparence est gérée par les un couple de digits compris entre 00 et 99 , on peut utiliser l'annotation raccourcie mais limite la transaprence a 1 chiffre */
+.alpha-hexa {
+    background-color: #DDD9; /* annotation raccourcie*/
+    border-radius: 10px;
+}
+

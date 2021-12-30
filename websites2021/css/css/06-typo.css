@@ -1,0 +1,51 @@
+/* Created 2021-14-12*/
+/* les typographies sur le web sont regroupées en 5 familles */
+
+/* Le choix des typo ezst basé sur les polices système ( par défaut du navigateur)
+
+/* typo uniquement basée sur la famille */
+/* 
+        -Serif : possède un trait ( ligature) plus ou moins prononcé pour chaque lettre.
+
+        -Sans-serif: sans empattement avec des ligne plus droite.
+
+        -Monospace: toutes les lettres ont le même espace , la meme largeur fixe look un peut mécanique.
+
+        -Cursive: imite l'écriture humaine
+
+        -Fantasy: polices décoratives    
+*/
+.sans-serif {
+    font-family: sans-serif; /*pas de dif car par défaut mit dans template.css*/
+}
+
+/* plusieurs fonts proposeées */
+
+.lucida {
+    font-family: 'Lucida sans', Verdana, Helvetica, sans-serif;
+}
+
+.courier {
+    font-family: 'Courier New', monospace;
+}
+
+/* Police embarquée, intégration d'une typo étrangère à celle de bases que l'on doit télécharger préalablement*/ 
+
+/* directives , une directive est une instruction css , elle commence par un @ 
+@font-face */
+/* création de la liaison avec la typo dl */
+@font-face {
+    font-family: Quicksand;
+    src: url('../typo/Quicksand_Book_Oblique.otf');
+}
+
+.quicksand {
+    font-family: Quicksand, sans-serif;
+}
+
+
+.montserrat {
+    font-family:  Montserrat, sans-serif;
+    font-weight: 500; /* propriété css pour mettre en gras mais aussi pour choisir les particularitées de la typo que l'on a choisi version spécifique de notre typo , ici 100, 300 ou 500*/
+}
+
