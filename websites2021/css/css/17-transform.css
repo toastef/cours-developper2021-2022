@@ -1,0 +1,20 @@
+/*created 2022-01-25*/
+
+fieldset {
+   height: 250px;
+}
+
+img {
+    width: 250px;
+    margin: 1.4rem;
+}
+
+/* toutes les images qui sont dans le fieldset class= rotate . rotation d'image avec une valeur en degré , si valeur négative le sens de la rotation est inversée*/ 
+.rotate img {
+    transform: rotate( -10deg);
+}
+
+/* scaleX ou scaleY va permettre de déformer l'image a un certain pourcentage */
+.scale img:hover {
+    transform: scaleY(110%);
+}

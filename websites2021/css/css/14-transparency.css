@@ -1,0 +1,17 @@
+/* created on 2022-01-25*/
+div {
+    margin: auto 0;
+    padding: 10% 0% 0% 10%;
+    height: 270px;
+    background: url(../img/back01.jpg) center; /* regroupement de la position et de l'image */
+    background-size: cover;
+    
+}
+p {
+    width: 40%;
+    padding: 25px;
+    background-color: rgba(34, 34, 34, 0.103);
+    color : #fff;
+    border-radius: 35% 3% 35% 3%;
+    
+}

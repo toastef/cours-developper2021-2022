@@ -1,0 +1,26 @@
+/* CREATED on 2022-02-08*/
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    margin: 3px;
+    padding: 10px;
+    background-color: rgb(242, 144, 37);
+    border-radius: 6px;
+    color:#fff;
+    text-decoration: none;
+    transition: background-color 0.5s , color 1s ;
+    /* transition: all 1s; regroupement */
+}
+
+/* hover est une pseudo-class*/
+a:hover {
+    background-color: #555;
+    color: yellow;
+}

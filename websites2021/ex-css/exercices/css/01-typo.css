@@ -1,0 +1,49 @@
+/* Created on 2022-02-01*/
+
+.ex01{
+    color: #583401;
+    font-size: 1.2rem;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6rem;
+    font-weight: bold ;
+    /*  RACCOURCI font: bold 1.2rem/1.6rem Helvetica, Arial, sans-serif;  ( lefont-size suivit de la barre oblique va permettre d'integrer un line-height uniquement si la barre oblique est mise et uniqueme,nt si il y a un font-size
+    */  
+}
+
+.ex02{
+    color: rgb(41, 41, 41);
+    font-family:  Helvetica, sans-serif;
+    font-size: 1.37rem;
+    line-height:1.88rem;
+    letter-spacing: 0.13rem;
+    word-spacing: 0.18rem ;
+    font-style: italic;
+    /* RACCOURCI font: italic 1.37rem/1.88rem  Helvetica, Arial, sans-serif */
+}
+
+.ex03{
+    color: hsl(0, 100%, 60%);
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.ex04{
+    width: 30%;
+    padding: 1rem;
+    color: #fff;
+    background-color: rgb(41, 41, 41);
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 6px;
+    
+}
+
+.ex05 a {
+    font-size: 2.4rem;
+    color:orange;
+    text-decoration: none;
+}

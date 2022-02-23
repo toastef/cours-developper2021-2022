@@ -6,33 +6,37 @@
 
 /* Horizontale */
 
+/*justify va permettre d'alligner le texte tant a gauche que a droite */
 .justify {
     text-align: justify;
 }
-
+/* va permettre de centrer le texte sur la page*/
 .center {
     text-align: center;
 }
-
+/* allignement sur la droite*/ 
 .right {
     text-align: right;
 }
 
+/* création d'un alinea*/
 .indent {
     text-indent: 5rem;
 }
 
+/* création d'un espace similaire entre les mots */
 .w-s {
     word-spacing: 0.2rem;
 }
 
+/* création d'un espace entre les lettres */
 .l-s {
     letter-spacing: 0.5rem;
 }
 
 
 /* Vertical*/
-
+/* création de l'espace entyre les lignes */
 .l-h {
     line-height: 1.2rem;
 }

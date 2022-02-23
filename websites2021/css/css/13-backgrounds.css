@@ -1,0 +1,91 @@
+/* created 2022-01-25*/
+
+/*backgrounds*/
+
+
+div { /* hauteur de la div */
+    height: 300px;
+   
+}
+
+/* tous les h2 et les P vont être en blanc*/
+h2, 
+p {
+    color: #fff;
+}
+
+/* longueur des paragraphe a 50% de la longueur de la div */
+p {
+    width: 50%;
+  
+}
+
+/* couleur background*/
+.color {
+    background-color: #555;
+  
+}
+
+/* image de fond */
+.image {
+    background-image: url(../img/back01.jpg);
+   
+}
+
+/* background-size définit la taille de l'image de fond */
+.image-cover {
+    background-image: url(../img/back01.jpg);
+    background-size: cover;
+   
+}
+
+/* background-position permet de définir l'emplacement de l'image , si l'image dépasse l'espace disponible on utilise soit top , buttom, ou center */
+.image-position {
+    background-image: url(../img/back01.jpg);
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+/* image à taille fixe ( 270px), importée depuis pexels directement , si la hauteur de l'espace  dépasse , l'image est répétée , alors on peut utiliser background-repeat: no-repeat */
+.image-adaptee {
+    background-image: url(../img/maldives.jpg);
+    height: 380px;
+    background-repeat: no-repeat;
+    background-color:  red;
+  
+}
+
+.image-adaptive {
+    background-image: url(../img/maldive-large.jpg);
+    min-height: 270px;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-repeat {
+    background-image: url(../img/woman.png);
+    background-repeat: no-repeat; /* si pas le no-repeat ,  l'image va se répéter pour combler l'espace de la div */
+    
+}
+.image-repeat h2, 
+.image-repeat p,
+.image-palce h2 ,
+.image-palce p,
+.image-multiple h2,
+.image-multiple p {
+color: darkblue;
+}
+/* permet de positionner l'image dont la taille est réduite sur chaque bords */
+.image-palce {
+    background-image: url(../img/woman.png);
+    background-size: 30%; /* taille de l'image par rapport à la taille de la div */
+    background-repeat: no-repeat;
+    background-position: bottom left; 
+}
+
+/* Avec la propriété de regroupement background il est possible d'utiliser plusieurs images de fonds*/ 
+.image-multiple {
+    background: url(../img/woman.png) no-repeat left/30% , url(../img/woman-man.jpg) no-repeat right/30%  ;
+
+}

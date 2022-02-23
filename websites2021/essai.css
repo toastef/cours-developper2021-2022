@@ -1,0 +1,47 @@
+/*created on 22-01-24 */
+body{
+    
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+   
+}
+.menu-button li{
+    display: inline-flex;
+    align-content: center; 
+   
+}
+.menu-button a{
+    position:relative;
+    padding: 0.8rem;
+    color: white;
+    text-decoration: none;
+    background-color: #ff8e4d;
+    border-radius:6px;
+    transition: background-color 0.5s ease-in ;
+    align-self:auto;
+    align-content: center;
+}
+.menu-button a:hover {
+    background-color:   #c97849;
+    color: rgba(7, 6, 6, 0.993)
+}
+
+.container1,   
+.container2,
+.container3 {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    justify-content: center;
+    position: relative;
+    max-width: 250px;
+    height: 250px;
+    background-color:  #3f87a642;
+    border: solid 1px #555;
+    filter: drop-shadow(20px 20px 20px rgb(28, 165, 175));
+    border-radius: 5%;
+}
+.inner {
+    margin-top: 3rem;
+    text-align: center ;
+}

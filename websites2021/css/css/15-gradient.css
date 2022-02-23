@@ -1,0 +1,36 @@
+/*Created  2022-01-25*/
+
+p {
+    height: 90px;
+}
+
+
+/* Les dégradés linéaires */
+.d1 {
+    
+    background-image: linear-gradient(rgb(99, 99, 99), #aaa);
+}
+
+.d2 {
+    background-image: linear-gradient(to right, rgb(99, 99, 99), #aaa); 
+}
+
+
+.d3 {
+    background-image: linear-gradient(to left, rgb(99, 99, 99), #aaa); 
+}
+
+.d4 {
+    height: 100px;
+    background-image: linear-gradient(to bottom right, rgb(250, 33, 33), rgb(75, 3, 3)); 
+}
+
+
+/* Les dégradés radiaux, qui partent du milieu vers l'extérieure  */
+.d5{
+    background-image: radial-gradient(rgb(253, 202, 160) , rgb(248, 114, 7));
+}
+
+.d6{
+    background-image: radial-gradient(ellipse at center ,#27433C , #f2f2f2);
+}

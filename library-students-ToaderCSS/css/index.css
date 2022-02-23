@@ -4,15 +4,30 @@
 body {
     margin: 2% 15%;
     font-family:'Roboto', sans-serif;
+    font-size: 1.1rem;
     color: rgb(148, 138, 138)
 }
 
+p{
+    text-align: justify;
+}
 i {
-    color: rgb(255, 115, 0);
+    color: rgb(255, 104, 17);
 }
 
 nav {
-    margin: 2% 0% ;
+    margin: 2% 0% 0% 0% ;
+    border-bottom: 1px solid rgb(206, 201, 201);
+    padding-bottom: 14px;
+}
+
+nav b {
+    padding-right: 2rem;
+}
+
+nav a {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .collib {
@@ -30,9 +45,11 @@ nav {
 .icofont-home:hover {
     color: rgb(255, 115, 0);
 }
+
 a {
     color: rgb(145, 139, 139);
     text-decoration: none;
+    /* color: inherit; va forcer l'heritage de la couleur du parents */
 }
 
 a:hover {
@@ -50,17 +67,16 @@ h1 {
     font-size: 1.4rem;
 }
   
-.hr{
-    margin: 0.2rem;
-    margin-left: 0rem;
-    width: 20rem;
-}
 
+h2 {
+    width: 40%;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    padding-bottom: 1rem;
+}
 h3 {
     font-weight: lighter;
 
 }
-
 
 
 ul {
@@ -72,31 +88,32 @@ ul {
 }
 
 .ialign{
-    padding-top: 1rem;
-  padding-left: 2rem;
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+td a {
+    color: rgb(255, 115,0)
 }
 
 .blackstar{
     color: black;
 }
- footer {
+
+footer {
      margin:  2rem;
  }
 
 
-
-
 .icofont-arrow-up{  
-    margin-left: 100%;
-    width: 50px;
-    height: 50px;
-    background-color: rgb(255, 87, 0);
-    ;
+    width: 1.5rem ;
+    height: 1.5rem;
+    background-color: rgb(170,33,33);
+    color: white ; 
     border-radius: 50%;
-    position: relative;    
-    pointer-events: auto;
+    margin-left: 100% ;
 }
 .icofont-arrow-up:hover{
-    background-color: red
-    ;
+    background-color: red;
 }

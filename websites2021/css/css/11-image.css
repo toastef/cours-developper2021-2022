@@ -1,0 +1,28 @@
+/* created 2022/01/11*/
+
+.image{
+    width: 330px;
+    border: 1px solid rgb(150,150,150);
+    border-radius: 50px 10px;
+}
+
+.left {
+    margin: 0 1rem 1rem 0;
+    float: left;
+   
+}
+
+.right {
+    margin: 1rem 0 1rem 0 ;
+    float : right;
+   
+}
+
+.img-fluid {
+    max-width: 100%; /* pour permettre a l'image de s'adapter à la résolution */
+    height: auto;
+}
+
+.round {
+    border-radius: 50%;
+}

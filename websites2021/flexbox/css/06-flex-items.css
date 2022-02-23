@@ -1,0 +1,46 @@
+/* La propriété align-sefl permet de repositionner un item par rapport aux autres */
+
+/* La propriété order permet de modifier l'ordre des items */
+
+.container {
+	display: flex;
+	justify-content: center;
+	height: 400px;
+	margin-bottom: 2rem;
+}
+
+.container div {
+	width: 20%;
+	height: 100px;
+}
+
+.item02 {
+	align-self: flex-end;
+}
+
+.item01 {
+	order: 1;
+}
+
+.item03 {
+	order: 2;
+}
+
+/* La propriété flex-grow permet à un élément de s'étirer en fonction de l'espace disponible.  Par défaut la valeur est de 1 */
+ 
+.container-grow {
+	display: flex;
+	
+}
+
+.container-grow div {
+	height: 100px;
+}
+
+.container-grow .item02 {
+	flex-grow: 1;
+}
+
+.container-grow .item04 {
+	flex-grow: 2;
+}

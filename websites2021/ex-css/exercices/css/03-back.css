@@ -1,0 +1,46 @@
+/* Created on 2022-02-01*/
+body {
+    margin: 1% 10%;
+    font-family: sans-serif;
+    color: #333;
+}
+.ex01{
+    max-width: 1600px;
+    height: 400px;
+    padding-top: 10%;
+    margin:  0 auto;
+    background-image: url(../image/back01.jpg);
+    background-position: bottom;
+}
+
+.ex02 {
+    max-width: 40%;
+    min-height: 200px; /* hauteur toujours en pixel*/
+    text-align: center;
+    margin: 0 auto; /* centrer horizontalement sans flex box*/
+    background-color: rgba(214, 230, 227, 0.363);
+    border: solid 0.3px rgba(32, 109, 95, 0.363) ;
+    border-radius: 6px;
+    
+  
+}
+
+.ex02 h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+
+}
+.ex02 p {
+    margin: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.ex02:hover  {
+    background-color: rgba(214, 230, 227, 0) ;
+    cursor: pointer ;
+}
+
+h2:hover,p:hover{
+    color:rgba(21, 196, 164, 0.788)
+}

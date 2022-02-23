@@ -1,0 +1,48 @@
+/*created 2022-01-25*/
+
+/* modification de la fotos en utilisant des traitements graphique sur la photo */
+
+img { 
+    width: 350px;
+    padding-right: 1rem;
+}
+img:hover{
+    filter: none;
+}
+
+.grayscale {
+   filter: grayscale(100%);
+
+}
+
+.sepia {
+    filter: sepia(65%);
+}
+
+
+.blur{
+    filter: blur(2px);
+}
+
+.saturate{
+    filter: saturate(3);
+}
+
+.brightness{
+    filter: brightness(130%);
+}
+
+.multi {
+    filter: grayscale(100%) blur(1px) ;
+}
+
+
+/* création d'une ombre qui donne un effet ressorti */
+.drop-shadow {
+    filter: drop-shadow(14px 14px 10px #666);
+}
+
+.drop-shadow-transparent {
+    filter: drop-shadow(14px 0px 14px #666); /* décalage X décalage Y  rayon-flou couleur*/ 
+    margin-bottom: 0%;
+}

@@ -1,14 +1,16 @@
 /* Created 2021-12-21*/
 
+/* texte en gras*/
 .bold {
-    font-weight: bold;
+    font-weight : bold;
 }
 
+/* On enleve le gras du titre */
 h2 {
-    font-weight: normal;
+ font-weight: normal;
 }
 
-/* Lighter ou bolder dépendentr de l'élément parent */
+/* Lighter ou bolder dépendent de l'élément parent */
 .lighter {
     text-decoration: none;
     font-weight: lighter;
@@ -34,9 +36,10 @@ em {
 
 /* La propriété Stretch permet de choisir la form normal, condensée ou étendue de police */
 .stretch {
-    font-stretch:extra-condensed;
+    font-stretch: extra-condensed;
 }
 
+/* petites majuscules */
 .variant {
     font-variant: small-caps;
 }
@@ -45,9 +48,10 @@ h3 {
     font-variant-caps: all-petite-caps;
 }
 
-/* Propriété de regroupement */  
+/* Propriété de regroupement 
 
-/* 
+On va regrouper toute les propriétées de font dans la même propriétée
+
 font-style
 font-variant
 font-weight
@@ -74,10 +78,10 @@ font-family
 .deco-multi {
     text-decoration-line: underline ;
     text-decoration-color: rgb(174, 7, 7);
-    text-decoration-style: dotted;
+    text-decoration-style: dotted; /* va mettre des points a la place du simple soulignement */
 }
 
 .shadow {
     font-size: 2rem;
-    text-shadow: 2px 2px 1.5rem rgb(174, 7, 7);
+    text-shadow: 7px 7px 1.5rem rgb(174, 7, 7); /* création d'une ombre de texte */
 }
