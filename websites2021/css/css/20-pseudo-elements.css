@@ -1,0 +1,10 @@
+
+/** selecteur de type , selecteur de classe et selecteurs d'id */
+p  {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#first-letter {
+    background-color: yellow;
+}

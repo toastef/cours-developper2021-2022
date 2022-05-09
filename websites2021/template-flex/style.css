@@ -1,0 +1,253 @@
+/*created on 2022-02-24*/
+
+*{
+    font-family: 'Lato' , sans-serif;
+   
+}
+
+header {
+    background-color: rgb(44, 73, 62);
+}
+
+nav {
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    color: rgb(179, 88, 4) ;
+    font-size: 1rem;
+   
+}
+.ul li {
+    list-style-type: none;
+}
+
+.link ul li {
+    display: inline-flex;
+    justify-content: flex-end;
+    
+}
+.link ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem;
+}
+section{
+    margin: 0 7rem 0 7rem;
+}
+.image{
+    margin: 0 ;
+    display: flex;
+    background-image: url(img/about.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 260px;
+    justify-content: center;
+}
+
+.title2 {
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+    padding: 25px; 
+    color:#fff;
+    justify-content: center;
+    align-items: center;
+}
+.title2 h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    margin: 0;
+} 
+.title2 p {
+    font-weight:100;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+.about{
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+.about>h1{
+    display:flex;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding-top: 2.5rem;
+    color: rgb(26, 18, 18);
+}
+.para h2, 
+.para p {
+    padding-left: 6rem;
+    font-weight: 700;
+}
+.picture {
+    width: 700px;
+    height: 400px;
+    background-image: url(img/about.jpg);
+    background-size: cover;
+    background-position: center;
+    float: right;   
+    margin-right: 6rem;
+    margin-left: 3rem;
+    border: 1px solid #555;
+    border-radius: 6px;
+   
+}
+.para h2{
+    color: rgb(218, 112, 13);
+}
+.para>p {
+    max-width: 55%;
+    text-align: justify;
+    color: rgb(100, 99, 99);
+}
+.team{
+    max-width: 100%;
+    padding-top: 3rem;
+    margin: 0 7rem 0 7rem;
+}
+.our{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+.team h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22rem;    
+    min-height: 45vh;
+    border: 0.5px solid rgb(230, 228, 228);
+    border-radius: 6px;
+    margin-right: 15px;
+}
+.card h3 {
+    color:  rgb(218, 112, 13);
+}
+.card img {
+    max-width: max-content;
+    border-radius: 50%;
+}
+.card p {
+    text-align: center;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+i {
+    font-size: 1.3rem;
+}
+i:hover , .link a:hover {
+    color:  rgb(218, 112, 13) ;
+    cursor: pointer;
+
+}
+.publication{
+    padding-bottom: 2rem;
+}
+
+.publication h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.move {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 6rem;
+    text-align: start;
+    
+}
+.move h2{
+   color: rgb(218, 112, 13);
+}
+
+.move p {
+    max-width: 90%;
+    text-align:justify;
+    color: rgb(100, 99, 99);
+   
+}
+.liens{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; 
+    margin-right: 25rem;
+}
+
+.liens h2{
+    margin-bottom: 0 ;
+}
+.listes{
+    align-content:flex-start ;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.listes ul {
+    padding: 0;
+    list-style-type: none;
+}
+.listes li{
+    margin-bottom: 7px;
+} 
+.listes a {
+    color: rgb(100, 99, 99);
+    margin-bottom: 1rem;
+}
+
+footer{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 8rem;
+    padding: 0 11rem 0 8rem;
+    background-color: rgb(44, 73, 62);
+    
+}
+.adress h4{
+    color: rgb(218, 112, 13);
+}
+.adress p {
+    max-width: 60%;
+    color: #fff;
+}
+.foot-link{
+    margin-right: 9rem;
+}
+.foot-link ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+.foot-link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+.foot-link a:hover{
+    color: rgb(218, 112, 13); 
+}
+.social{
+    color: #fff;
+}
+.social i {
+    font-size: 18px;
+}

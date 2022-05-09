@@ -14,7 +14,7 @@ section{
     background-color: rgb(167, 164, 164);
 }
 .fle01{
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .fle01 div {
