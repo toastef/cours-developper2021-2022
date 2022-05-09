@@ -1,10 +1,46 @@
-
 /** selecteur de type , selecteur de classe et selecteurs d'id */
-p  {
-    color: red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* Pseudo-elements
+/*<ils permettent de cibler du contenu sans l'aide de balises
+
+les pseudos classes sont caractérisées par les ::
+ */
+
+.letter p::first-letter {
+    font-size: 2rem;
+    color: #414141;
 }
 
-#first-letter {
-    background-color: yellow;
+
+.line p::first-line {
+    font-weight: bold;
+}
+
+/*before et after vont permettrent de cibler un element pour y inserer du contenu devant et derière un element*/
+
+.content .doe::after {
+    font-style: italic;
+    content: "(jhon doe)";
+}
+
+.content .servais::after {
+    font-style: italic;
+    content: "(Dominique Servais -BE)";
+}
+
+.img p::before {
+    content: url("../img/icons8-search-24.png");
+}
+
+/* pseudo element "selection" , va affecter la selection de l'element */
+.selection p::selection {
+    background-color: coral;
+    color: #FFFFFF;
+}
+
+input::placeholder {
+    color: orange;
+}
+
+li::marker {
+    color: red;
 }

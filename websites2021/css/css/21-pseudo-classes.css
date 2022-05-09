@@ -1,0 +1,71 @@
+/*Created - 2022-05-09*/
+
+/* Les pseudos classes permettent de cibler un élément suivant un état ou une action */
+
+/*
+:link ( liens non visités)
+:visited (liens visités)
+:hover (liens survolés )
+:active (liens actifs)
+ */
+
+.links ul{
+    list-style-type: none;
+}
+
+. links a {
+    text-decoration: none;
+    color: #777777;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.links a:active {
+    color: blue;
+}
+
+.links a:visited{
+    color: red;
+}
+
+input:invalid{
+    color: red;
+}
+
+input:valid{
+    color: green;
+}
+
+input:checked{
+    margin-left: 1rem;
+    background-color: blue;
+}
+input:focus{
+    background-color: deepskyblue;
+}
+
+.first-last li:first-child,
+.first-last li:last-child{
+    color: red;
+}
+/* nth-child ( nieme enfant ) odd = impaire et even = pair */
+.odd li:nth-child(even){
+    color: deepskyblue;
+}
+
+td , th {
+    border: 1px solid #777777;
+
+}
+table{
+    border-collapse: collapse;
+}
+tr:nth-child(even):hover{
+    background-color: #777777;
+}
+
+tr:nth-child(4){
+    color: red;
+}
