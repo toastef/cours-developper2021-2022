@@ -69,3 +69,7 @@ tr:nth-child(even):hover{
 tr:nth-child(4){
     color: red;
 }
+
+.not li:not(:last-child) {
+    border-bottom: 1px solid grey;
+}

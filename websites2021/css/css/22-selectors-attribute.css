@@ -1,0 +1,44 @@
+/* CSS 2022-05-09 */
+
+/* permettent de selectionner une balise sur l'attribut ou la valeur de l'attribut */
+
+/* vérifie la présence de l'attribut*/
+.att01 p[lang]{
+    color: grey;
+
+}
+
+/* vérifie la valeur de l'attribut ,cibler plus spécifiquement*/
+
+.att02 p[lang="es"]{
+    color : red;
+}
+
+
+.att03 input[type="email"]{
+    background-color: #dddddd;
+}
+
+.att03 input[type="submit"]{
+    color: red;
+}
+
+/*Vérifie si la valeur de l'attribut commence par */
+.att04 a[href^="http"]{
+    color: green;
+}
+
+
+/*  Vérifie si la valeur de l'attribut s termine par*/
+
+.att04 a[href$="pdf"]{
+    color: yellow;
+    text-decoration: none;
+}
+
+/*  Vérifie si la valeur de l'attribut contient une chaine */
+
+.att04 a[href*="img"]{
+    color: orange;
+    text-decoration: none;
+}

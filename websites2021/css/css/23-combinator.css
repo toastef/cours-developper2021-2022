@@ -1,0 +1,20 @@
+/* CSS 2022-05-09  */
+
+
+/* Selecteur de descandance , va prendre tous ce qui en découle
+.childs ul {
+
+}
+ */
+
+/* Selecteur d'enfants */
+.childs > ul > li > ul {
+    list-style-type: square;
+}
+
+/* Selecteur d'adjacence */
+/* cible une balise qui suit directement une autre */
+
+.add h1 + p {
+    font-weight: bold;
+}
