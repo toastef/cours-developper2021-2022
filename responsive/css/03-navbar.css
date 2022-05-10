@@ -26,9 +26,42 @@ div {
     background-color: grey;
 }
 
+nav {
+
+    background-color: #7777;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;  /* on enleve le padding left */
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+   padding: 0.8rem 0 ;
+}
+
+nav li:hover {
+    background-color: #6c6868;
+    border-radius: 6px ;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333232;
+}
+
 /* à partir de 768px on intègre les regles ci dessous pour résolution tablet*/
 
 @media screen and (min-width: 768px){
+    nav ul{
+        display: flex;
+        justify-content: end;
+    }
+    nav li {
+        padding: 0.6rem;
+    }
     .team {
         display: flex;
         flex-wrap: wrap;
