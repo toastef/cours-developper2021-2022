@@ -1,0 +1,42 @@
+div {
+    box-sizing: border-box;
+    padding: 0.9rem;
+    color: #fff;
+}
+
+.team div:nth-child(1){
+    background-color: rgb(73,72,72);
+}
+
+.team div:nth-child(2){
+    background-color: rgb(26,25,25);
+}
+
+.team div:nth-child(3){
+    background-color: rgb(42,77,108);
+}
+.team div:nth-child(4){
+    background-color: rgb(31, 91, 81);
+}
+
+
+/* à partir de 768px on intègre les regles ci dessous pour résolution tablet*/
+
+@media screen and (min-width: 768px){
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .team div {
+        width: 50%;
+    }
+}
+
+/*desktop*/
+
+@media screen and  (min-width: 992px){
+    .team div {
+        width: 25%;
+    }
+}
